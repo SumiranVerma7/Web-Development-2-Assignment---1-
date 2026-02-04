@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#dashboard{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+#firstHeading{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#wrapper{
+    background: linear-gradient(to right, #95D2D7,#90B6E9);
+    height: 100vh;
+}
+#leftpanel{
+    border: 1px solid black;
+    width: 30%;
+    background-color: white ;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 5%;
+}
+#rightpanel{
+    border: 1px solid black;
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5%;
+} 
+button{
+    background: linear-gradient(#92C1E1,#95D0D8);
+}
