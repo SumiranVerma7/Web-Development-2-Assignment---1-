@@ -1,37 +1,86 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-#dashboard{
-    display: flex;
-    gap: 20px;
-    padding: 40px;
-}
-
-#firstHeading{
-    text-align: center;
-    padding-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 #wrapper{
     background: linear-gradient(to right, #95D2D7,#90B6E9);
-    height: 100vh;
+    min-height: 100vh;
 }
-#leftpanel{
-    border: 1px solid black;
-    width: 30%;
-    background-color: white ;
-    height: 70vh;
+
+#firstHeading{
+    text-align: center;
     padding: 20px;
-    border-radius: 5%;
+    font-size: 2rem;
 }
-#rightpanel{
-    border: 1px solid black;
-    width: 70%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5%;
-} 
+
+#dashboard{
+    display: flex;
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Panels */
+#leftpanel, #rightpanel{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#leftpanel{ width: 30%; }
+#rightpanel{ width: 70%; }
+
+/* Form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus, textarea:focus{
+    border-color: #5a9bd5;
+    outline: none;
+}
+
+/* Buttons */
 button{
-    background: linear-gradient(#92C1E1,#95D0D8);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg,#5a9bd5,#6ec6ca);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+/* Event Card */
+.event{
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Actions */
+.actions{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#emptyText{
+    color: gray;
 }
