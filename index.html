@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-    <h1 id="firstHeading"> Smart Event Dashboard</h1>
+<div id="wrapper">
+
+    <h1 id="firstHeading">Smart Event Dashboard</h1>
 
     <div id="dashboard">
 
-        <!-- LEFT: Add Event -->
+        <!-- LEFT PANEL -->
         <div id="leftpanel">
             <h2>Add New Event</h2>
-            <br>
+
             <form id="eventForm">
                 <label>Event Title</label>
-                <br>
-                <input type="text" id="title" required />
-                <br>
-                <br>
+                <input type="text" id="title" required>
+
                 <label>Event Date</label>
-                <br>
-                <input type="date" id="date" required />
-                <br>
-                <br>
+                <input type="date" id="date" required>
+
                 <label>Category</label>
-                <br>
                 <select id="category">
                     <option>Conference</option>
                     <option>Workshop</option>
                     <option>Meeting</option>
                 </select>
-                <br>
-                <br>
+
                 <label>Description</label>
-                <br>
                 <textarea id="description"></textarea>
-                <br>
+
                 <button type="submit">Add Event</button>
             </form>
         </div>
 
-        <!-- RIGHT: Events -->
+        <!-- RIGHT PANEL -->
         <div id="rightpanel">
             <h2>My Events</h2>
-            <br>
+
             <div class="actions">
-                <button id="clearAll">Clear All Events</button>
-                <button id="addSample">Add Sample Events</button>
+                <button id="clearAll">Clear All</button>
+                <button id="addSample">Add Sample</button>
             </div>
 
             <p id="emptyText">No events yet. Add your first event!</p>
@@ -60,8 +53,8 @@
         </div>
 
     </div>
-    <script src="/script.js"></script>
-    </div>
-</body>
+</div>
 
+<script src="script.js"></script>
+</body>
 </html>
